@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    background: #fafbff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #18191f;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fafbff;
+    z-index: 1000;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.white-header {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(30,46,98,.10);
+    display: flex;
+    align-items: center;
+    max-width: 1550px;
+    width: 96%;
+    padding: 20px;
+    gap: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo {
+    font-weight: 700;
+    color: #4974ff;
+    font-size: 22px;
+    margin-right: 32px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    flex: 1;
+}
+
+nav a {
+    color: #18191f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    transition: color .15s;
+}
+
+nav a:hover {
+    color: #4974ff;
+}
+
+.header-contacts {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-phone, .header-email {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #4974ff;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1430px;
+    margin-left: 5%;
+    padding: 120px 36px 0 36px;
+    min-height: 100vh;
+}
+
+.main-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+}
+
+.main-content {
+    max-width: 590px;
+    flex-shrink: 0;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    line-height: 1.12;
+}
+
+.blue {
+    color: #4974ff;
+}
+
+.main-content p {
+    font-size: 1rem;
+    margin-bottom: 36px;
+    color: #53545a;
+}
+
+/* Форма обратной связи и поля */
+
+.callback-form {
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(44, 61, 163, .08);
+    border-radius: 12px;
+    padding: 28px 28px 12px 28px;
+    margin: 0;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.callback-label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+.callback-row {
+    display: flex;
+    gap: 28px;
+    align-items: end;
+}
+
+.callback-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+    flex: none;
+}
+
+.field-label {
+    color: #959bb5;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.field-value {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #18191f;
+    padding: 0 0 4px 0;
+    border-bottom: 2px solid #e6eaf7;
+    min-height: 36px;
+    background: none;
+    gap: 8px;
+}
+
+.input-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.75;
+    margin-right: 4px;
+}
+
+.callback-btn {
+    background: #5972f7;
+    color: #fff;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-end;
+    min-width: 110px;
+    min-height: 58px;
+    transition: background 0.15s;
+    box-shadow: 0 1px 7px rgba(100,120,220, .07);
+    text-align: left;
+}
+
+.callback-btn:hover {
+    background: #3754c4;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding: 60px 0 30px 0;
+}
+
+.footer-content {
+    background: #151b25;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 1350px;
+    color: #fff;
+    padding: 34px 28px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 24px 0 rgba(30,46,98,.10);
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 27px;
+}
+
+.footer-cols {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    gap: 10px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 170px;
+    flex: 1 1 0;
+    padding: 6px 12px;
+}
+
+.footer-icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 7px;
+    opacity: 0.92;
+}
+
+.footer-label {
+    color: #b0b7c3;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.footer-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+.footer-bottom {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e3eb;
+    font-size: 16px;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.footer-bottom-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    opacity: 0.9;
+}
+
+/* Адаптив */
+
+@media (max-width: 900px) {
+    .white-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px 12px;
+    }
+    .logo {
+        margin-bottom: 6px;
+    }
+    nav {
+        gap: 14px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .header-contacts {
+        gap: 8px;
+        flex-direction: column;
+    }
+    .main-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mockup-images {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    .footer-cols {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .footer-col {
+        align-items: center;
+        min-width: 0;
+        padding: 12px 3px;
+    }
+}
+
+@media (max-width: 800px) {
+    .callback-row { flex-direction: column; align-items: stretch; gap: 18px; }
+    .callback-btn { margin: 0; width: 100%; }
+}
