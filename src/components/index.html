@@ -1,43 +1,270 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <title>Главная страница</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IT Website</title>
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
+
 <body>
 
-<header>
-    <img src="../assets/img/logo.png" alt="Логотип" width="100">
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="contacts.html">Контакты</a
-            ></li>
+
+<header class="site-header">
+    <a class="site-logo text-color-blue" href="#">IT WEBSITE</a>
+
+    <nav class="header-nav">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Media</a></li>
+            <li class="nav-item"><a href="#">Cases</a></li>
+            <li class="nav-item"><a href="#">FAQ</a></li>
+            <li class="nav-item"><a href="#">Contacts</a></li>
         </ul>
     </nav>
-</header>
 
-<h1>Пример заголовка</h1>
-<p class = "parag">Это пример параграфа с произвольным текстом.</p>
-<h3>Подзаголовок 1</h3>
-<h4>Еще один заголовок поменьше</h4>
-<p class = "parag">Здесь пример текста с количеством слов не более пятнадцати.</p>
-<h3>Подзаголовок 2</h3>
-<p class = "parag">Короткий текст до десяти слов.</p>
+    <div class="header-contacts">
+        <div class="contact-phone">
+            <img class="contact-icon phone-icon" src="/src/assets/icons/IconPhone.svg" alt="Phone Icon" />
+            <p class="contact-info text-color-blue">+7 (111) 111 11 11</p>
+            <p class="contact-info text-color-blue">+7 (111) 111 11 11</p>
+        </div>
+        <div class="contact-email">
+            <img class="contact-icon email-icon" src="/src/assets/icons/IconEmail.svg" alt="Email Icon" />
+            <p class="contact-info text-color-blue">itcompany@mail.com</p>
+        </div>
+    </div>
+</header>
 
 <hr>
 
-<footer>
-    <h3>Контакты сайта</h3>
-    <p class = "parag">Напиши нам, если есть вопросы.</p>
+<main>
+
+
+    <section class="main-description">
+        <h2 class="description-header header-text">
+            Development of <span class="text-color-blue">mobile applications</span>
+            and <span class="text-color-blue">web services</span> of any complexity
+        </h2>
+        <p class="default-text">
+            We create mobile applications for iOS, Android that transfer your
+            business to mobile applications of your customers' devices.
+        </p>
+    </section>
+
     <hr>
-    <ul>
-        <li>Свяжитесь с нами</li>
-        <li>+7 123 456-78-90</li>
-        <li>email@example.com</li>
-    </ul>
-    <p class = "parag">Все права защищены</p>
+
+
+    <section class="main-feedback">
+        <h3 class="feedback-subheader subheader-text">
+            Leave your contacts and we will call you back<br>within 30 minutes
+        </h3>
+
+        <form class="feedback-form" action="#" method="post">
+            <div class="feedback-field">
+                <label for="feedback-phone" class="form-label">Phone number</label>
+                <div class="feedback-field-phone">
+                    <img id="feedback-image" src="/src/assets/img/IconFlag.png" alt="Flag Icon" />
+                    <input type="tel" id="feedback-phone" name="feedback-phone" placeholder="+7 (111) 111-11-11" required>
+                </div>
+            </div>
+
+            <div class="feedback-field">
+                <label for="feedback-name" class="form-label">Full name</label>
+                <input type="text" id="feedback-name" name="feedback-name" placeholder="Иван Иванов" required>
+            </div>
+
+            <button type="submit" class="feedback-button">Get consultation</button>
+        </form>
+    </section>
+
+    <hr>
+
+
+    <section class="development-info">
+        <article class="development-technologies">
+            <h2 class="header-text">Full development cycle</h2>
+            <p class="default-text">We use proven technologies</p>
+
+            <h3 class="subheader-text">Web</h3>
+            <p class="default-text">
+                PHP / Javascript / Node.JS / WebSocket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / Go / Django / Python
+            </p>
+
+            <h3 class="subheader-text">Mobile</h3>
+            <p class="default-text">
+                Swift / Kotlin / Firebase / CoreData / Realm / RxJava / RxSwift / Unit Test / Navigation
+            </p>
+        </article>
+
+        <aside class="development-categories">
+            <ul class="development-list">
+                <li class="development-item"><a href="#">iOS development</a></li>
+                <li class="development-item"><a href="#">Android development</a></li>
+                <li class="development-item"><a href="#">Web development</a></li>
+                <li class="development-item"><a href="#">UI/UX design</a></li>
+                <li class="development-item"><a href="#">Testing</a></li>
+                <li class="development-item"><a href="#">Launch</a></li>
+                <li class="development-item"><a href="#">IT consulting</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <hr>
+
+    <!-- Проекты -->
+    <section class="projects">
+        <h2 class="header-text">
+            Developed more than <span class="text-color-blue">100</span> projects in
+            <span class="text-color-blue">15</span> industries
+        </h2>
+
+        <div class="project-list">
+            <article class="project-column">
+                <h3 class="subheader-text">Industries</h3>
+                <ul>
+                    <li>Social media</li>
+                    <li>Fitness</li>
+                    <li>Banking</li>
+                    <li>Construction</li>
+                    <li>Games</li>
+                </ul>
+            </article>
+
+            <article class="project-column">
+                <ul>
+                    <li>Education</li>
+                    <li>Transport</li>
+                    <li>Medicine</li>
+                    <li>Food delivery</li>
+                    <li>Marketplaces</li>
+                </ul>
+            </article>
+
+            <article class="project-column">
+                <ul>
+                    <li>AR</li>
+                    <li>TV</li>
+                    <li>Startups</li>
+                    <li>Religion</li>
+                    <li>Online courses</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <section class="clients">
+        <h2 class="header-text">Projects we are proud of</h2>
+        <p class="default-text">
+            Our company is proud of our clients. We enjoy long-term partnership.
+        </p>
+
+        <ul class="clients-list">
+            <li><a href="#">I-teka</a></li>
+            <li><a href="#">Dauletten</a></li>
+            <li><a href="#">Guru Bosch</a></li>
+            <li><a href="#">Santo</a></li>
+            <li><a href="#">Home Credit Bank</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+
+    <section class="contact-form">
+        <h2 class="header-text text-color-white">Let's discuss your project</h2>
+        <p class="default__text text_color_white">
+            Let's figure out how to create an effective app and estimate time and cost.
+        </p>
+
+        <form class="contact__form" action="#" method="post">
+            <label for="contact-phone" class="form__label">Best phone number</label>
+            <input type="tel" id="contact-phone" name="contact-phone" placeholder="+7 (111) 111-11-11" required>
+            <label for="contact-name" class="form__label">Full name</label>
+            <input type="text" id="contact-name" name="contact-name" placeholder="Иван Иванов" required>
+            <button type="submit" class="contact__button">Discuss the project</button>
+        </form>
+    </section>
+
+    <hr>
+
+
+    <section class="development-stages">
+        <h3 class="header-text">Application Development Stages</h3>
+
+        <article class="stage-item">
+            <h4>Analysis</h4>
+            <p>We write technical specifications and study business processes.</p>
+        </article>
+
+        <article class="stage-item">
+            <h4>Design</h4>
+            <p>We adapt corporate identity to platform guidelines.</p>
+        </article>
+
+        <article class="stage-item">
+            <h4>Development</h4>
+            <p>We create architecture, write clean and stable code.</p>
+        </article>
+
+        <article class="stage-item">
+            <h4>Testing</h4>
+            <p>We test the application and fix bugs.</p>
+        </article>
+
+        <article class="stage-item">
+            <h4>Launch</h4>
+            <p>We publish in App Store and Google Play.</p>
+        </article>
+
+        <article class="stage-item">
+            <h4>Support</h4>
+            <p>We monitor app stability and update for new devices.</p>
+        </article>
+    </section>
+
+    <hr>
+
+
+    <section class="company-about">
+        <h3 class="header-text">Our team</h3>
+        <p class="default-text">
+            Full-cycle digital production with analytics, design, web and mobile dev.
+        </p>
+        <p class="default-text">7 years in IT sphere, 100+ projects, 28 team members.</p>
+    </section>
+
+    <hr>
+
+
+    <section class="faq">
+        <h3 class="header-text">FAQ</h3>
+        <details>
+            <summary>What is the cost of a mobile application?</summary>
+            <p>It depends on complexity, platform, and features.</p>
+        </details>
+        <details>
+            <summary>How long will development take?</summary>
+            <p>On average from 2 to 6 months.</p>
+        </details>
+    </section>
+
+</main>
+
+<hr>
+
+<footer class="footer">
+    <a href="#" class="footer-logo text-color-white">IT WEBSITE</a>
+    <address class="footer-main">
+        <p> +7 (778) 395-90-26</p>
+        <p>️ mail@mail.com</p>
+        <p> City city, street st. 90</p>
+    </address>
+    <p class="default-text text-color-white">We work throughout the world</p>
 </footer>
 
 </body>
