@@ -64,62 +64,81 @@
             </p>
         </div>
 
-        <div class="form">
-            <div class="intro-title-container">
-                <h3 class="intro-title">Leave your contacts and we will call you back within 30 minutes</h3>
-            </div>
-            <div class="form-elements">
-                <div class="form-field phone-field">
-                    <label for="phone" class="form-label">Phone number</label>
-                    <div class="input-with-icon">
-                        <img src="/src/assets/img/IconFlag.png" alt="flag" class="input-icon" />
-                        <input id="phone" type="text" placeholder="+7 (111) 111-11-11" />
+        <article class="main__feedback">
+            <h3 class="subheader__text">
+                Leave your contacts and we will call you back within 30 minutes
+            </h3>
+            <form class="feedback__form" action="" method="">
+                <div class="feedback__field">
+                    <label for="feedback__phone" class="form__label"
+                    >Phone number</label
+                    >
+                    <div class="feedback__field--phone">
+                        <img
+                                id="feedback_image"
+                                src="/src/assets/img/IconFlag.png"
+                                alt="FlagIcon"
+                        />
+                        <input
+                                type="tel"
+                                id="feedback__phone"
+                                name="feedback__phone"
+                                placeholder="+7 (111) 111-11-11"
+                                required
+                        />
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="name" class="form-label">Full name</label>
-                    <input id="name" type="text" placeholder="Иван Иванов" />
-                </div>
-                <button class="consult-btn">Get consultation</button>
-            </div>
-        </div>
 
+                <div class="feedback__field">
+                    <label for="feedback__name" class="form__label">Full name</label>
+                    <input
+                            type="text"
+                            id="feedback__name"
+                            name="feedback__name"
+                            placeholder="Иван Иванов"
+                            required
+                    />
+                </div>
+                <button type="submit" class="feedback__button">
+                    Get consultation
+                </button>
+            </form>
+        </article>
 
         <div class="main__background__image">
             <div class="main__background">
                 <img
-                        src="/src/assets/img/детали отзыва.jpg"
-                        alt="Детали отзыва"
+                        src="assets/img/детали отзыва.jpg"
+                        alt="детали отзыва"
                         class="background__image"
                 />
                 <img
-                        src="/src/assets/img/новый чат.jpg"
-                        alt="Новый чат"
+                        src="assets/img/новый чат.jpg"
+                        alt="новый чат"
                         class="background__image"
                 />
                 <img
-                        src="/src/assets/img/комментарии к отзыву.jpg"
-                        alt="Комментарии к отзыву"
+                        src="assets/img/комментарии к отзыву.jpg"
+                        alt="комментарии"
                         class="background__image main__image"
                 />
                 <img
-                        src="/src/assets/img/главная со списком организации.jpg"
-                        alt="Главная страница со списком организаций"
+                        src="assets/img/главная со списком организации.jpg"
+                        alt="главная"
                         class="background__image"
                 />
                 <img
-                        src="/src/assets/img/Сообщения.jpg"
+                        src="assets/img/Сообщения.jpg"
                         alt="Сообщения"
                         class="background__image"
                 />
                 <img
-                        src="/src/assets/img/настройки.jpg"
-                        alt="Настройки"
+                        src="assets/img/настройки.jpg"
+                        alt="настройки"
                         class="background__image"
                 />
             </div>
         </div>
-
     </div>
 </section>
 
@@ -215,6 +234,531 @@
                     />
                 </li>
             </ul>
+        </div>
+    </div>
+</section>
+
+<section class="projects">
+    <div class="container">
+        <div class="project__header">
+            <h2 class="header__text">
+                Developed more than
+                <span class="text_color_blue">100</span> projects in
+                <span class="text_color_blue">15</span> industries
+            </h2>
+        </div>
+        <div class="project__list">
+            <article class="project__column">
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/social_media.svg"
+                    />
+                    <p>Social media</p>
+                </div>
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/fitness.svg" />
+                    <p>Fitness and sport</p>
+                </div>
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/bank.svg" />
+                    <p>Bank</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/construction.svg"
+                    />
+                    <p>Construction</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/game_projects.svg"
+                    />
+                    <p>Game projects</p>
+                </div>
+            </article>
+            <article class="project__column">
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/education.svg"
+                    />
+                    <p>Education</p>
+                </div>
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/auto.svg" />
+                    <p>Auto, transport</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/medicine.svg"
+                    />
+                    <p>Medicine, health</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/restaurant.svg"
+                    />
+                    <p>Restaurants, food delivery</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/marketplace.svg"
+                    />
+                    <p>Marketplaces</p>
+                </div>
+            </article>
+            <article class="project__column last__column">
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/ar.svg" />
+                    <p>AR technology</p>
+                </div>
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/tv.svg" />
+                    <p>TV series</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/startups.svg"
+                    />
+                    <p>Startups</p>
+                </div>
+                <div class="project__item">
+                    <img
+                            class="project__image"
+                            src="/src/assets/icons/religion.svg"
+                    />
+                    <p>Religion</p>
+                </div>
+                <div class="project__item">
+                    <img class="project__image" src="/src/assets/icons/online.svg" />
+                    <p>Online cources</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="clients">
+    <div class="container">
+        <div class="clients__header">
+            <h2 class="header__text">Projects we are proud of</h2>
+            <p class="default__text">
+                Our software development company is truly proud of the wonderful
+                clients we have worked with. We enjoy a long-term partnership
+            </p>
+        </div>
+        <div class="clients__companies">
+            <ul class="clients__list">
+                <li class="clients__item"><a href="#">I-teka</a></li>
+                <li class="clients__item"><a href="#">Dauletten</a></li>
+                <li class="clients__item"><a href="#">Guru Bosch</a></li>
+                <li class="clients__item"><a href="#">Santo</a></li>
+                <li class="clients__item"><a href="#">Home Credit Bank</a></li>
+                <li class="clients__item"><a href="#">BI Partners</a></li>
+                <li class="clients__item"><a href="#">Europharma</a></li>
+            </ul>
+            <button type="button" class="clients__button1">
+                View 100 more projects
+            </button>
+        </div>
+
+        <div class="iteka">
+            <div class="iteka__description">
+                <div class="iteka__header">
+                    <h2 class="header__text">I-teka</h2>
+                </div>
+                <div class="iteka__underheader">
+                    <div class="iteka__underdescription">
+                        <p class="default__text">
+                            The application is designed to search for drugs by
+                            availability in pharmacies in cities. During quarantine, the
+                            application helped many people, which gives more value.
+                        </p>
+                    </div>
+                    <div class="iteka__list">
+                        <div class="iteka__tools">
+                            <p class="tool">Business analysis</p>
+                            <p class="tool">iOS</p>
+                            <p class="tool">Android</p>
+                            <p class="tool">QA</p>
+                            <p class="tool">UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="iteka__info">
+                        <div class="iteka__category">
+                            <img
+                                    class="iteka__icon"
+                                    src="/src/assets/icons/IconGeo.svg"
+                                    alt="GeoPosition"
+                            />
+                            <p class="iteka__text default__text">Kazakhstan</p>
+                        </div>
+                        <div class="iteka__category">
+                            <img
+                                    class="iteka__icon"
+                                    src="/src/assets/icons/IconCase.svg"
+                                    alt="SuitCase"
+                            />
+                            <p class="iteka__text default__text">Medicine</p>
+                        </div>
+                    </div>
+                    <div class="iteka__users">
+                        <div class="users__growth">
+                            <h3 class="subheader__text">400%</h3>
+                            <p class="form__label">User Growth</p>
+                        </div>
+                        <div class="users__active">
+                            <h3 class="subheader__text">+ 200 000</h3>
+                            <p class="form__label">Active Users</p>
+                        </div>
+                    </div>
+                    <div class="iteka__stores">
+                        <img src="/src/assets/img/AppStore.png" class="clients__app" />
+                        <img
+                                src="/src/assets/img/GooglePlay.png"
+                                class="clients__app"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="iteka__image">
+                <img class="aside__image" src="/src/assets/img/i-teka.png" />
+            </div>
+            <div class="clients__button2">
+                <button type="button" class="button2">
+                    View 100 more projects
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <div class="contact__text">
+            <h3 class="header__text text_color_white">
+                Let's discuss<br />Your project
+            </h3>
+            <p class="default__text text_color_white">
+                Let's figure out how to create an effective application,<br />its
+                cost and terms of its development
+            </p>
+        </div>
+        <article class="contact__feedback">
+            <form class="contact__form" action="" method="">
+                <div class="fields">
+                    <div class="feedback__field">
+                        <label for="contact__phone" class="form__label"
+                        >Best phone number</label
+                        >
+                        <img
+                                id="feedback__image"
+                                src="/src/assets/img/IconFlag.png"
+                                alt="FlagIcon"
+                        />
+                        <input
+                                type="tel"
+                                id="contact__phone"
+                                name="contact__phone"
+                                placeholder="+7 (111) 111-11-11"
+                                required
+                        />
+                    </div>
+
+                    <div class="feedback__field">
+                        <label for="contact__name" class="form__label">Full name</label>
+                        <input
+                                type="text"
+                                id="contact__name"
+                                name="contact__name"
+                                placeholder="Иван Иванов"
+                                required
+                        />
+                    </div>
+                </div>
+
+                <button type="submit" class="contact__button">
+                    Discuss the project
+                </button>
+            </form>
+        </article>
+    </div>
+</section>
+
+<section class="development__stages">
+    <div class="container">
+        <div class="development__stages__text">
+            <h3 class="header__text">Application Development Stages</h3>
+        </div>
+        <div class="item__blocks">
+            <article class="item__column">
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Analysis</h4>
+                        <img class="stage__image" src="/src/assets/icons/planing.svg" />
+                    </div>
+                    <p class="default__text">
+                        We write technical specifications for development, taking into
+                        account the business processes and technologies of the customer
+                        and the needs of users.
+                    </p>
+                </div>
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Design</h4>
+                        <img
+                                class="stage__image"
+                                src="/src/assets/icons/graphic_design.svg"
+                        />
+                    </div>
+                    <p class="default__text">
+                        We adapt the customer's corporate identity to the platform
+                        guidelines. We draw convenient and understandable interfaces.
+                    </p>
+                </div>
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Development</h4>
+                        <img
+                                class="stage__image"
+                                src="/src/assets/icons/computer_coding.svg"
+                        />
+                    </div>
+                    <p class="default__text">
+                        We create an extensible architecture, write clean and stable
+                        code. We integrate with customer technologies.
+                    </p>
+                </div>
+            </article>
+            <article class="item__column">
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Testing</h4>
+                        <img
+                                class="stage__image"
+                                src="/src/assets/icons/security.svg"
+                        />
+                    </div>
+                    <p class="default__text">
+                        We carry out functional testing and do bug fixes. We adapt the
+                        application to different phone resolutions
+                    </p>
+                </div>
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Launching</h4>
+                        <img class="stage__image" src="/src/assets/icons/hosting.svg" />
+                    </div>
+                    <p class="default__text">
+                        We design the application page and publish it in the App Store
+                        and Google Play stores.
+                    </p>
+                </div>
+                <div class="stage__item">
+                    <div class="stage__item__header">
+                        <h4 class="stage__header">Support</h4>
+                        <img
+                                class="stage__image"
+                                src="/src/assets/icons/application.svg"
+                        />
+                    </div>
+                    <p class="default__text">
+                        We monitor the stability of the application, update it for new
+                        devices and versions of iOS and Android.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="company__about">
+    <div class="container">
+        <div class="company__text">
+            <h3 class="header__text">Our team</h3>
+            <p class="default__text first__paragraph">
+                Thousand is a full-cycle digital production company with its own
+                product analytics, design, web and mobile development.
+            </p>
+            <div class="company__video2">
+                <img
+                        class="video__window"
+                        src="/src/assets/img/future_video.jpg"
+                        alt="future_video"
+                />
+                <img
+                        class="video__button"
+                        src="/src/assets/icons/PlayButton.svg"
+                        alt="play_video"
+                />
+            </div>
+            <div class="company__stats">
+                <div class="stats">
+                    <h3 class="header__text">28</h3>
+                    <p class="form__label">team members</p>
+                </div>
+                <div class="stats">
+                    <h3 class="header__text">+100</h3>
+                    <p class="form__label">projects</p>
+                </div>
+                <div class="stats">
+                    <h3 class="header__text">7 years</h3>
+                    <p class="form__label">in IT sphere</p>
+                </div>
+            </div>
+            <p class="default__text">
+                All the necessary specialists - from a designer to a tester - are on
+                our staff. We hire the best specialists in the market. It's
+                expensive but worth it
+            </p>
+        </div>
+        <div class="company__video1">
+            <img
+                    class="video__window"
+                    src="/src/assets/img/future_video.jpg"
+                    alt="future_video"
+            />
+            <img
+                    class="video__button"
+                    src="/src/assets/icons/PlayButton.svg"
+                    alt="play_video"
+            />
+        </div>
+    </div>
+</section>
+
+<section class="book__advert">
+    <div class="container">
+        <div class="book__info">
+            <div class="book__advert__text">
+                <h3 class="header__text text_color_white">
+                    Get the book for free by leaving your contacts
+                </h3>
+            </div>
+            <div class="book__image2">
+                <img
+                        class="book__example"
+                        src="/src/assets/img/Book.png"
+                        alt="book"
+                />
+            </div>
+            <article class="book__advert__form">
+                <form class="book__form" action="" method="">
+                    <div class="book__fields">
+                        <div class="book__field">
+                            <div class="book__phone__field">
+                                <label for="book__phone" class="form__label">
+                                    Phone number
+                                </label>
+                                <img
+                                        id="book__image"
+                                        src="/src/assets/img/IconFlag.png"
+                                        alt="FlagIcon"
+                                />
+                                <input
+                                        type="tel"
+                                        id="book__phone"
+                                        name="book__phone"
+                                        placeholder="+7 (111) 111-11-11"
+                                        required
+                                />
+                            </div>
+
+                            <div class="book__name__field">
+                                <input
+                                        type="text"
+                                        id="book__name"
+                                        class="book__form-name"
+                                        name="book__name"
+                                        placeholder="Your full name"
+                                        required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="book__email__field">
+                            <label for="book__email" class="form__label">email</label>
+                            <input
+                                    type="email"
+                                    id="book__email"
+                                    name="book__email"
+                                    placeholder="mail@mail.com"
+                                    required
+                            />
+                        </div>
+
+                        <button type="submit" class="book__button">
+                            Send my ebook to my mail
+                        </button>
+                    </div>
+                </form>
+            </article>
+        </div>
+        <div class="book__image1">
+            <img
+                    class="book__example"
+                    src="/src/assets/img/Book.png"
+                    alt="book"
+            />
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <div class="faq__text">
+            <h3 class="header__text">FAQ</h3>
+        </div>
+        <div class="faq__questions">
+            <article class="question__column">
+                <div class="question">
+                    <h4 class="stage__header">
+                        What is the cost of a mobile application?
+                    </h4>
+                    <img
+                            class="faq__image"
+                            src="/src/assets/icons/IconPlus.svg"
+                            alt="open_block"
+                    />
+                </div>
+                <div class="question border__bottom1">
+                    <h4 class="stage__header">
+                        Do you provide a guarantee for the mobile application?
+                    </h4>
+                    <img
+                            class="faq__image"
+                            src="/src/assets/icons/IconPlus.svg"
+                            alt="open_block"
+                    />
+                </div>
+            </article>
+            <article class="question__column">
+                <div class="question">
+                    <h4 class="stage__header">How long will development take?</h4>
+                    <img
+                            class="faq__image"
+                            src="/src/assets/icons/IconPlus.svg"
+                            alt="open_block"
+                    />
+                </div>
+                <div class="question border__bottom2">
+                    <h4 class="stage__header">
+                        I will not tell my idea, do you guarantee confidentiality?
+                    </h4>
+                    <img
+                            class="faq__image"
+                            src="/src/assets/icons/IconPlus.svg"
+                            alt="open_block"
+                    />
+                </div>
+            </article>
         </div>
     </div>
 </section>
