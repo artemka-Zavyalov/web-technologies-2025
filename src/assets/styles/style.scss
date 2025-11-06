@@ -1,11 +1,9 @@
 @import "./global.scss";
-@import "./fonts.scss";
 @import "./utils.scss";
 
 @media (max-width: 767px) {
   body {
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,12 +25,10 @@
       line-height: 144%;
       letter-spacing: 0.3px;
       text-align: left;
-      font-family: Inter;
       color: rgba(16, 24, 40, 1);
     }
 
     .default__text {
-      font-family: SFProText;
       font-size: 15px;
       font-weight: 500;
       line-height: 20px;
@@ -42,7 +38,6 @@
     }
 
     .subheader__text {
-      font-family: Inter;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px;
@@ -63,7 +58,7 @@
     .header {
       margin: 0;
       background-color: white;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
       padding: 16px;
       height: 90px;
       width: 99%;
@@ -111,7 +106,6 @@
 
       .logo {
         width: 100%;
-        font-family: Inter;
         font-style: normal;
         font-size: 20px;
         font-weight: 700;
@@ -175,8 +169,8 @@
           order: 3;
           border-radius: 12px;
           box-shadow:
-                  0px 0px 2px rgba(0, 0, 0, 0.08),
-                  0px 0px 24px rgba(0, 0, 0, 0.16);
+                  0 0 2px rgba(0, 0, 0, 0.08),
+                  0 0 24px rgba(0, 0, 0, 0.16);
 
           .feedback__form {
             display: flex;
@@ -194,7 +188,6 @@
 
               .form__label {
                 color: rgba(102, 112, 133, 1);
-                font-family: SFProText;
                 font-size: 13px;
                 font-weight: 500;
                 line-height: 16px;
@@ -208,7 +201,6 @@
                 height: 30px;
                 border: none;
                 border-bottom: 1px solid rgba(208, 213, 221, 1);
-                font-family: SFProText;
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 22px;
@@ -225,7 +217,6 @@
                 margin-left: -2px;
                 padding-left: 2px;
                 border-bottom: 1px solid rgba(208, 213, 221, 1);
-                font-family: SFProText;
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 22px;
@@ -252,7 +243,6 @@
               text-align: center;
               cursor: pointer;
               border-radius: 8px;
-              font-family: SFProText;
               font-size: 14px;
               font-weight: 700;
             }
@@ -288,8 +278,8 @@
               .main__image {
                 width: 146px;
                 box-shadow:
-                        0px 0px 96px 0px rgba(0, 0, 0, 0.24),
-                        0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+                        0 0 96px 0 rgba(0, 0, 0, 0.24),
+                        0 0 2px 0 rgba(0, 0, 0, 0.16);
               }
             }
           }
@@ -340,7 +330,6 @@
               align-items: center;
 
               .tool {
-                font-family: SFProText;
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 1.1px;
@@ -381,7 +370,6 @@
               height: 48px;
 
               a {
-                font-family: SFProText;
                 font-size: 20px;
                 color: black;
                 text-decoration: none;
@@ -570,7 +558,6 @@
                   align-items: center;
 
                   .tool {
-                    font-family: SFProText;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 1.1px;
@@ -731,7 +718,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -745,7 +731,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -816,8 +801,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .stage__item__header {
                 width: 200px;
@@ -967,8 +952,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .book__fields {
                 width: 100%;
@@ -1000,7 +985,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -1023,7 +1007,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -1046,7 +1029,6 @@
                     height: 40px;
                     border: none;
                     border-bottom: 1px solid rgba(208, 213, 221, 1);
-                    font-family: SFProText;
                     font-size: 17px;
                     font-weight: 400;
                     line-height: 22px;
@@ -1160,7 +1142,6 @@
             padding: 0;
             width: 217px;
             height: 36px;
-            font-family: Inter;
             font-size: 36px;
             font-weight: 700;
             line-height: 18px;
@@ -1201,7 +1182,6 @@
               }
 
               .footer__text {
-                font-family: SFProText;
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 18px;
@@ -1221,7 +1201,6 @@
             gap: 12px;
 
             p {
-              font-family: SFProText;
               font-size: 13px;
               font-weight: 400;
               line-height: 16px;
@@ -1237,7 +1216,6 @@
 @media (min-width: 768px) and (max-width: 1439px) {
   body {
     margin: 0;
-    padding: 0;
     padding-top: 24px;
     width: 100%;
     background-color: rgb(235, 236, 237);
@@ -1257,12 +1235,10 @@
       padding: 0;
       letter-spacing: 0.3px;
       text-align: left;
-      font-family: Inter;
       color: rgba(16, 24, 40, 1);
     }
 
     .default__text {
-      font-family: SFProText;
       font-size: 15px;
       font-weight: 500;
       line-height: 20px;
@@ -1272,7 +1248,6 @@
     }
 
     .subheader__text {
-      font-family: Inter;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px;
@@ -1294,7 +1269,7 @@
       margin: 0;
       position: absolute;
       background-color: white;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
       padding: 16px;
       height: 90px;
       width: 100%;
@@ -1342,7 +1317,6 @@
 
       .logo {
         min-width: 120px;
-        font-family: Inter;
         font-style: normal;
         font-size: 20px;
         font-weight: 700;
@@ -1378,7 +1352,6 @@
           }
 
           .contacts__info {
-            font-family: SFProText;
             font-size: 14px;
             font-weight: 500;
             padding: 0;
@@ -1432,8 +1405,8 @@
           background-color: white;
           border-radius: 12px;
           box-shadow:
-                  0px 0px 2px rgba(0, 0, 0, 0.08),
-                  0px 0px 24px rgba(0, 0, 0, 0.16);
+                  0 0 2px rgba(0, 0, 0, 0.08),
+                  0 0 24px rgba(0, 0, 0, 0.16);
 
           .feedback__form {
             display: flex;
@@ -1451,7 +1424,6 @@
 
               .form__label {
                 color: rgba(102, 112, 133, 1);
-                font-family: SFProText;
                 font-size: 13px;
                 font-weight: 500;
                 line-height: 16px;
@@ -1465,7 +1437,6 @@
                 height: 30px;
                 border: none;
                 border-bottom: 1px solid rgba(208, 213, 221, 1);
-                font-family: SFProText;
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 22px;
@@ -1481,7 +1452,6 @@
                 margin-left: -2px;
                 padding-left: 2px;
                 border-bottom: 1px solid rgba(208, 213, 221, 1);
-                font-family: SFProText;
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 22px;
@@ -1508,7 +1478,6 @@
               text-align: center;
               cursor: pointer;
               border-radius: 8px;
-              font-family: SFProText;
               font-size: 14px;
               font-weight: 700;
             }
@@ -1544,8 +1513,8 @@
               .main__image {
                 width: 146px;
                 box-shadow:
-                        0px 0px 96px 0px rgba(0, 0, 0, 0.24),
-                        0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+                        0 0 96px 0 rgba(0, 0, 0, 0.24),
+                        0 0 2px 0 rgba(0, 0, 0, 0.16);
               }
             }
           }
@@ -1595,7 +1564,6 @@
               align-items: center;
 
               .tool {
-                font-family: SFProText;
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 1.1px;
@@ -1762,7 +1730,6 @@
           .clients__button1 {
             max-width: 207px;
             max-height: 40px;
-            width: 100%;
             height: auto;
             border: none;
             background-color: rgba(45, 102, 238, 1);
@@ -1833,7 +1800,6 @@
                   justify-content: flex-start;
                   align-items: center;
                   .tool {
-                    font-family: SFProText;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 1.1px;
@@ -1975,7 +1941,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -1990,7 +1955,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -2067,8 +2031,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .stage__item__header {
                 width: 200px;
@@ -2208,8 +2172,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .book__fields {
                 width: 100%;
@@ -2240,7 +2204,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -2263,7 +2226,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -2287,7 +2249,6 @@
                     height: 40px;
                     border: none;
                     border-bottom: 1px solid rgba(208, 213, 221, 1);
-                    font-family: SFProText;
                     font-size: 17px;
                     font-weight: 400;
                     line-height: 22px;
@@ -2410,7 +2371,6 @@
             padding: 0;
             width: 100%;
             height: 36px;
-            font-family: Inter;
             font-size: 36px;
             font-weight: 700;
             line-height: 18px;
@@ -2446,7 +2406,6 @@
                 }
 
                 .footer__text {
-                  font-family: SFProText;
                   font-size: 14px;
                   font-weight: 500;
                   line-height: 18px;
@@ -2467,7 +2426,6 @@
             gap: 12px;
 
             p {
-              font-family: SFProText;
               font-size: 13px;
               font-weight: 400;
               line-height: 16px;
@@ -2483,7 +2441,6 @@
 @media (min-width: 1440px) {
   body {
     margin: 0;
-    padding: 0;
     padding-top: 24px;
     width: 100%;
     background-color: rgb(235, 236, 237);
@@ -2501,14 +2458,12 @@
       line-height: 51px;
       letter-spacing: 0.3px;
       text-align: left;
-      font-family: Inter;
       color: rgba(16, 24, 40, 1);
       margin: 0;
       padding: 0;
     }
 
     .subheader__text {
-      font-family: Inter;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px;
@@ -2519,7 +2474,6 @@
     }
 
     .default__text {
-      font-family: SFProText;
       font-size: 15px;
       font-weight: 500;
       line-height: 20px;
@@ -2538,7 +2492,7 @@
 
     .header {
       background-color: white;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
       padding: 16px 24px;
       height: 56px;
       max-width: 1472px;
@@ -2557,7 +2511,6 @@
 
       .logo {
         min-width: 120px;
-        font-family: Inter;
         font-style: normal;
         font-size: 20px;
         font-weight: 700;
@@ -2581,7 +2534,6 @@
           .menu__item {
             a {
               color: #101828;
-              font-family: SFProText;
               font-size: 14px;
               font-weight: 500;
               text-decoration: none;
@@ -2630,7 +2582,6 @@
         }
 
         .contacts__info {
-          font-family: SFProText;
           font-size: 14px;
           font-weight: 500;
           padding: 0;
@@ -2668,8 +2619,8 @@
         background-color: white;
         border-radius: 12px;
         box-shadow:
-                0px 0px 2px rgba(0, 0, 0, 0.08),
-                0px 0px 24px rgba(0, 0, 0, 0.16);
+                0 0 2px rgba(0, 0, 0, 0.08),
+                0 0 24px rgba(0, 0, 0, 0.16);
 
         .subheader__text {
           width: 500px;
@@ -2679,7 +2630,7 @@
           display: flex;
           width: 628px;
           height: 58px;
-          opacity: 0px;
+          opacity: 0;
 
           .feedback__field {
             width: 224px;
@@ -2687,7 +2638,6 @@
 
             .form__label {
               color: rgba(102, 112, 133, 1);
-              font-family: SFProText;
               font-size: 13px;
               font-weight: 500;
               line-height: 16px;
@@ -2701,7 +2651,6 @@
               height: 30px;
               border: none;
               border-bottom: 1px solid rgba(208, 213, 221, 1);
-              font-family: SFProText;
               font-size: 17px;
               font-weight: 400;
               line-height: 22px;
@@ -2717,7 +2666,6 @@
               margin-left: -2px;
               padding-left: 2px;
               border-bottom: 1px solid rgba(208, 213, 221, 1);
-              font-family: SFProText;
               font-size: 17px;
               font-weight: 400;
               line-height: 22px;
@@ -2744,7 +2692,6 @@
             text-align: left;
             cursor: pointer;
             border-radius: 8px;
-            font-family: SFProText;
             font-size: 14px;
             font-weight: 700;
 
@@ -2780,8 +2727,8 @@
             .main__image {
               width: 310px;
               box-shadow:
-                      0px 0px 96px 0px rgba(0, 0, 0, 0.24),
-                      0px 0px 2px 0px rgba(0, 0, 0, 0.16);
+                      0 0 96px 0 rgba(0, 0, 0, 0.24),
+                      0 0 2px 0 rgba(0, 0, 0, 0.16);
             }
 
             &:nth-child(1),
@@ -2860,7 +2807,6 @@
             align-items: center;
 
             .tool {
-              font-family: SFProText;
               font-size: 14px;
               font-weight: 500;
               line-height: 1.1px;
@@ -3096,7 +3042,6 @@
                 align-items: center;
 
                 .tool {
-                  font-family: SFProText;
                   font-size: 14px;
                   font-weight: 500;
                   line-height: 1.1px;
@@ -3232,7 +3177,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -3247,7 +3191,6 @@
                   height: 40px;
                   border: none;
                   border-bottom: 1px solid rgba(208, 213, 221, 1);
-                  font-family: SFProText;
                   font-size: 17px;
                   font-weight: 400;
                   line-height: 22px;
@@ -3322,8 +3265,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .stage__item__header {
                 width: 200px;
@@ -3455,8 +3398,8 @@
               padding: 24px;
               border-radius: 12px;
               box-shadow:
-                      0px 0px 2px rgba(0, 0, 0, 0.08),
-                      0px 0px 24px rgba(0, 0, 0, 0.16);
+                      0 0 2px rgba(0, 0, 0, 0.08),
+                      0 0 24px rgba(0, 0, 0, 0.16);
 
               .book__fields {
                 width: 100%;
@@ -3486,7 +3429,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -3510,7 +3452,6 @@
                       height: 40px;
                       border: none;
                       border-bottom: 1px solid rgba(208, 213, 221, 1);
-                      font-family: SFProText;
                       font-size: 17px;
                       font-weight: 400;
                       line-height: 22px;
@@ -3529,7 +3470,6 @@
                     height: 40px;
                     border: none;
                     border-bottom: 1px solid rgba(208, 213, 221, 1);
-                    font-family: SFProText;
                     font-size: 17px;
                     font-weight: 400;
                     line-height: 22px;
@@ -3640,7 +3580,6 @@
             margin: 0;
             padding: 0;
             max-width: 250px;
-            font-family: Inter;
             font-size: 36px;
             font-weight: 700;
             line-height: 18px;
@@ -3677,7 +3616,6 @@
               }
 
               .footer__text {
-                font-family: SFProText;
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 18px;
@@ -3697,7 +3635,6 @@
             gap: 12px;
 
             p {
-              font-family: SFProText;
               font-size: 13px;
               font-weight: 400;
               line-height: 16px;
