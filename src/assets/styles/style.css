@@ -1110,7 +1110,6 @@ body .medium {
         display: flex;
         width: 628px;
         height: 58px;
-        opacity: 0;
     }
     body .main .main__feedback .feedback__form .feedback__field {
         width: 224px;
