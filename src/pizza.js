@@ -1,185 +1,96 @@
 class Pizza {
-
-    static PIZZA_TYPES = {
-        "Маргарита": { price: 500, calories: 300 },
-        "Пепперони": { price: 800, calories: 400 },
-        "Баварская": { price: 700, calories: 450 },
+    static TYPES = {
+        'Маргарита': { price: 500, calories: 300 },
+        'Пиперине': { price: 800, calories: 400 },
+        'Баварская': { price: 700, calories: 450 }
     };
 
-    static SIZE_TYPES = {
-        "Большая": {
-            price: 200,
-            calories: 200,
-            key: "large"
-        },
-        "Маленькая": {
-            price: 100,
-            calories: 100,
-            key: "small"
-        },
+    static SIZES = {
+        'маленькая': { price: 100, calories: 100 },
+        'большая': { price: 200, calories: 200 }
     };
 
     static TOPPINGS = {
-        "сливочная моцарелла": {
-            price: {
-                small: 50,
-                large: 50
-            },
-            calories: 20
+        'сливочная моцарелла': { price: 50, calories: 20 },
+        'сырный борт': {
+            маленькая: { price: 150, calories: 50 },
+            большая: { price: 300, calories: 50 }
         },
-
-        "сырный борт": {
-            price: {
-                small: 150,
-                large: 300
-            },
-            calories: 50
-        },
-
-        "чедер и пармезан": {
-            price: {
-                small: 150,
-                large: 300
-            },
-            calories: 50
+        'чедер и пармезан': {
+            маленькая: { price: 150, calories: 50 },
+            большая: { price: 300, calories: 50 }
         }
     };
 
-
     constructor(type, size) {
-
-        if (!Pizza.PIZZA_TYPES[type])
-            throw new Error("Неизвестный тип пиццы");
-
-        if (!Pizza.SIZE_TYPES[size])
-            throw new Error("Неизвестный размер");
+        if (!Pizza.TYPES[type]) throw new Error('Неверный тип пиццы');
+        if (!Pizza.SIZES[size]) throw new Error('Неверный размер пиццы');
 
         this.type = type;
         this.size = size;
         this.toppings = [];
     }
 
-
     addTopping(topping) {
-
-        if (!Pizza.TOPPINGS[topping])
-            throw new Error("Неизвестная добавка");
-
-        if (!this.toppings.includes(topping))
+        if (!Pizza.TOPPINGS[topping]) throw new Error('Неверная добавка');
+        if (!this.toppings.includes(topping)) {
             this.toppings.push(topping);
+        }
     }
 
-
     removeTopping(topping) {
-
         this.toppings = this.toppings.filter(t => t !== topping);
     }
 
-
-    getPrice() {
-
-        const basePrice =
-            Pizza.PIZZA_TYPES[this.type].price +
-            Pizza.SIZE_TYPES[this.size].price;
-
-        const sizeKey = Pizza.SIZE_TYPES[this.size].key;
-
-        const toppingsPrice = this.toppings.reduce((sum, topping) => {
-
-            const toppingData = Pizza.TOPPINGS[topping];
-
-            return sum + toppingData.price[sizeKey];
-
-        }, 0);
-
-        return basePrice + toppingsPrice;
+    getToppings() {
+        return this.toppings;
     }
 
-
-    getCalories() {
-
-        const baseCalories =
-            Pizza.PIZZA_TYPES[this.type].calories +
-            Pizza.SIZE_TYPES[this.size].calories;
-
-        const toppingsCalories = this.toppings.reduce(
-
-            (sum, topping) =>
-                sum + Pizza.TOPPINGS[topping].calories,
-
-            0
-        );
-
-        return baseCalories + toppingsCalories;
+    getSize() {
+        return this.type;
     }
 
+    getStuffing() {
+        return this.size;
+    }
+
+    calculatePrice() {
+        let price = Pizza.TYPES[this.type].price + Pizza.SIZES[this.size].price;
+
+        for (let topping of this.toppings) {
+            const toppingInfo = Pizza.TOPPINGS[topping];
+            if (typeof toppingInfo.price !== 'undefined') {
+                price += toppingInfo.price;
+            } else {
+                price += toppingInfo[this.size].price;
+            }
+        }
+
+        return price;
+    }
+
+    calculateCalories() {
+        let calories = Pizza.TYPES[this.type].calories + Pizza.SIZES[this.size].calories;
+
+        for (let topping of this.toppings) {
+            const toppingInfo = Pizza.TOPPINGS[topping];
+            if (typeof toppingInfo.calories !== 'undefined') {
+                calories += toppingInfo.calories;
+            } else {
+                calories += toppingInfo[this.size].calories;
+            }
+        }
+
+        return calories;
+    }
 }
 
-
-
-document.getElementById('pizzaType').addEventListener('change', () => {
-
-    document
-        .getElementById('sizeDiv')
-        .classList
-        .remove('hidden');
-
-});
-
-
-
-document.getElementById('size').addEventListener('change', () => {
-
-    document
-        .getElementById('toppingsDiv')
-        .classList
-        .remove('hidden');
-
-    document
-        .getElementById('calculateBtn')
-        .classList
-        .remove('hidden');
-
-});
-
-
-
-document.getElementById('calculateBtn').addEventListener('click', () => {
-
-    const pizzaType =
-        document.getElementById('pizzaType').value;
-
-    const size =
-        document.getElementById('size').value;
-
-
-    if (!pizzaType || !size) {
-
-        alert("Выберите пиццу и размер");
-
-        return;
-    }
-
-
-    const pizza = new Pizza(pizzaType, size);
-
-
-    document
-        .querySelectorAll('#toppingsDiv input[type=checkbox]')
-        .forEach(checkbox => {
-
-            if (checkbox.checked)
-                pizza.addTopping(checkbox.value);
-
-        });
-
-
-    const price = pizza.getPrice();
-
-    const calories = pizza.getCalories();
-
-
-    document.getElementById('result').innerText =
-        `Цена: ${price} рублей\nКалорийность: ${calories} Ккал`;
-
-});
+// === Пример использования ===
+const myPizza = new Pizza('Маргарита', 'большая');
+myPizza.addTopping('сливочная моцарелла');
+myPizza.addTopping('сырный борт');
+console.log('Пицца:', myPizza.getSize());
+console.log('Размер:', myPizza.getStuffing());
+console.log('Добавки:', myPizza.getToppings().join(', '));
+console.log('Цена:', myPizza.calculatePrice(), 'руб.');
+console.log('Калории:', myPizza.calculateCalories(), 'Ккал.');
