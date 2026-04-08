@@ -1,115 +1,63 @@
 export class Catalog {
-    #el = null
-    #paginationEl = null
-    #itemsEl = null
-    #page = null
-    #total = null
-    #renderItem = null
-    #getItems = null
 
-    constructor(el, options) {
-        const { renderItem, getItems } = options
-        this.#el = el
-        this.#page = this.getPage()
-        this.#paginationEl = el.querySelector('[data-catalog-pagination]')
-        this.#itemsEl = el.querySelector('[data-catalog-items]')
-        this.#renderItem = renderItem
-        this.#getItems = getItems
+    constructor(root, options) {
+        this.root = root
+        this.renderItem = options.renderItem
+        this.getItems = options.getItems
+
+        this.limit = 9
+        this.page = 1
+
+        this.itemsContainer = root.querySelector('[data-catalog-items]')
+        this.paginationContainer = root.querySelector('[data-catalog-pagination]')
     }
 
-    get limit () {
-        return 12;
+    async init() {
+        await this.loadItems()
     }
 
-    get pageCount () {
-        return Math.ceil(this.#total / this.limit)
-    }
+    async loadItems() {
 
-    init () {
-        window.onpopstate = () => {
-            const url = new URL(window.location.href);
-            const page = +url.searchParams.get('page');
-
-            if (page !== this.#page) {
-                this.setPage(page);
-                this.loadItems()
-            }
-        }
-
-        this.#paginationEl.addEventListener('click', (event) => {
-            const item = event.target.dataset.catalogPaginationPage ? event.target : event.target.closest('[data-catalog-pagination-page]')
-
-            if (!item) {
-                return;
-            }
-
-            const page = +item.dataset.catalogPaginationPage
-
-            this.setPage(page);
-            this.pushState();
-            this.loadItems()
+        const data = await this.getItems({
+            limit: this.limit,
+            page: this.page
         })
 
-        this.loadItems()
+        this.renderItems(data.items)
+        this.renderPagination(data.total)
     }
 
-    getPage () {
-        const url = new URL(window.location.href);
-        const page = +url.searchParams.get('page');
+    renderItems(items) {
 
-        return page || 1;
+        this.itemsContainer.innerHTML =
+            items.map(this.renderItem).join('')
     }
 
-    setPage (page) {
-        this.#page = page
-    }
+    renderPagination(total) {
 
-    pushState () {
-        const url = new URL(window.location.href);
-        url.searchParams.set('page', this.#page);
+        const pages = Math.ceil(total / this.limit)
 
-        window.history.pushState({}, '', url)
-    }
+        this.paginationContainer.innerHTML = ''
 
-    loadItems () {
-        try {
-            this.#getItems({ limit: this.limit, page: this.#page })
-                .then(({ items, total }) => {
-                    this.#total = total
-                    this.renderItems(items)
-                    this.renderPagination()
-        })
-        } catch (error) {
-            console.log(error);
-        }
-    }
+        for (let i = 1; i <= pages; i++) {
 
-    renderItems (items) {
-        this.#itemsEl.innerHTML = items.map(this.#renderItem).join('')
-    }
+            const btn = document.createElement('button')
 
-    renderPagination () {
-        let html = ''
+            btn.textContent = i
+            btn.className = 'catalog__pagination-item'
 
-        for (let index = 0; index < this.pageCount; index++) {
-            const page = index + 1;
-
-            const classes = ['catalog__pagination-item']
-
-            if (page === this.#page) {
-                classes.push('catalog__pagination-item_active')
+            if (i === this.page) {
+                btn.classList.add('catalog__pagination-item_active')
             }
 
-            html += `
-                <button
-                    class="${classes.join(' ')}"
-                    data-catalog-pagination-page="${page}"
-                >
-                    ${page}
-                </button>
-            `
-        }
+            btn.addEventListener('click', async () => {
 
-        this.#paginationEl.innerHTML = html
+                this.page = i
+
+                await this.loadItems()
+            })
+
+            this.paginationContainer.append(btn)
+        }
     }
 }
