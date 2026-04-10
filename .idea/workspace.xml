@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0100a0f4-0b88-4f5c-a883-5c47625cc673" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson14" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="36s8qMu3VcJckkm3Sijix3IzE0n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.index.js.executor": "Run",
+    "Node.js.pizza.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lesson16",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Пользователь\PhpstormProjects\web-technologies-2025\src\assets\img" />
+      <recent name="C:\Users\Пользователь\PhpstormProjects\web-technologies-2025\src" />
+      <recent name="C:\Users\Пользователь\PhpstormProjects\web-technologies-2025\src\assets\js" />
+      <recent name="C:\Users\Пользователь\PhpstormProjects\web-technologies-2025" />
+      <recent name="C:\Users\Пользователь\PhpstormProjects\web-technologies-2025\assets\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="pizza.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/pizza.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.pizza.js" />
+        <item itemvalue="Node.js.pizza.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PS-252.26830.95" />
+        <option value="bundled-php-predefined-a98d8de5180a-9b563d34894c-com.jetbrains.php.sharedIndexes-PS-252.26830.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0100a0f4-0b88-4f5c-a883-5c47625cc673" name="Changes" comment="" />
+      <created>1765784112478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765784112478</updated>
+      <workItem from="1765784117278" duration="1232000" />
+      <workItem from="1765800500072" duration="153000" />
+      <workItem from="1765800678403" duration="50000" />
+      <workItem from="1767942817822" duration="1000" />
+      <workItem from="1768070899720" duration="8000" />
+      <workItem from="1768236734455" duration="69000" />
+      <workItem from="1768635441061" duration="3000" />
+      <workItem from="1769587703970" duration="22000" />
+      <workItem from="1770212436659" duration="12000" />
+      <workItem from="1770610599442" duration="3000" />
+      <workItem from="1771249367784" duration="421000" />
+      <workItem from="1771250646884" duration="3000" />
+      <workItem from="1771418743554" duration="2134000" />
+      <workItem from="1771697915553" duration="4000" />
+      <workItem from="1771931939940" duration="1000" />
+      <workItem from="1772009668729" duration="2522000" />
+      <workItem from="1773247650958" duration="14000" />
+      <workItem from="1773298880534" duration="94000" />
+      <workItem from="1773337810520" duration="1308000" />
+      <workItem from="1773645156665" duration="2000" />
+      <workItem from="1773670579742" duration="10000" />
+      <workItem from="1774941376985" duration="51000" />
+      <workItem from="1775194970077" duration="14000" />
+      <workItem from="1775657486942" duration="5205000" />
+      <workItem from="1775822802952" duration="411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
