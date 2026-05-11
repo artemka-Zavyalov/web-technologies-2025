@@ -1,32 +1,32 @@
-body {
-
-    font-family: Arial, sans-serif;
-
-    padding: 20px;
+.list-item {
+    font-size: 16px;
 }
 
-.gallery {
-
+.list-item__inner {
     display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
+    align-items: center;
+    gap: 0.5em;
 }
 
-.gallery img {
-
-    border: 1px solid #ccc;
-
-    transition: 0.3s;
+.list-item__items {
+    padding-left: 1.5em;
+    display: none;
 }
 
-.gallery img:hover {
-
-    transform: scale(1.05);
+.list-item__arrow {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
 }
 
-.upload-message h2 {
+.list-item__folder {
+    width: 2em;
+}
 
-    color: green;
+.list-item_open > .list-item__items {
+    display: block;
+}
+
+.list-item_open > .list-item__inner .list-item__arrow {
+    transform: rotate(180deg);
 }
